@@ -1,0 +1,61 @@
+<!---
+ Name: Shannon M
+ Course: CISC257
+ Description: An web application that has the user input their grades for their assignments, final project and final exam. 
+ then calculates their overall final grade for the course. 
+--->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Final Grade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="margin:25px">
+        
+        <h1 style="font-size:30px;text-decoration:underline black ;">GRADE CALCULATOR</h1> 
+        <!-- prompts user to enter grades in the text box -->
+        <p style="font-size:15px">Calculate your final grade in CISC 257.<br />
+           Enter your scores and click Calculate! </p>
+           
+ 
+  <form method= "post" action="Assignment1.php">
+<!-- text boxes for assignments 1-6, final project and final exam, user cannot input a negative value-->
+    <label for= "Assigment1" style="font-size:15px;"> Assignment #1:</label><br />
+    <input type="number" min="0" id="Assignment1" name="Assignment1" placeholder="Enter grade"/><br />
+
+
+    <label for= "Assigment2" style="font-size:15px;"> Assignment #2:</label><br />
+    <input type="number" min="0"  id="Assignment2" name="Assignment2" placeholder="Enter grade"/><br />
+
+
+    <label for= "Assigment3" style="font-size:15px;"> Assignment #3:</label><br />
+    <input type="number" min="0" id="Assignment3" name="Assignment3" placeholder="Enter grade"/><br />
+
+
+    <label for= "Assigment4" style="font-size:15px;"> Assignment #4:</label><br />
+    <input type="number" min="0"  id="Assignment4" name="Assignment4" placeholder="Enter grade"/><br />
+
+
+    <label for= "Assigment5" style="font-size:15px;"> Assignment #5:</label><br />
+    <input type="number" min="0"  id="Assignment5" name="Assignment5" placeholder="Enter grade"/><br />
+
+
+    <label for= "Assigment6" style="font-size:15px;"> Assignment #6:</label><br />
+    <input type="number" min="0"  id="Assignment6" name="Assignment6" placeholder="Enter grade"/><br />
+
+
+    <label for= "FinalProject" style="font-size:15px;"> Final Project:</label><br />
+    <input type="number" min="0" id="finalProject" name="finalProject" placeholder="Enter grade"/><br />
+
+
+    <label for= "FinalExam" style="font-size:15px;"> Final Exam:</label><br />
+    <input type="number" min="0"   id="FinalExam" name="FinalExam" placeholder="Enter grade"/><br />
+   
+  <!-- Button input   -->
+    <input type="Submit" style="border: 2px solid darkblue; width:25%;border-radius:12px;background-color:white;"  value="Calculate" > 
+    
+    </form>
+    </body>
+</html>
